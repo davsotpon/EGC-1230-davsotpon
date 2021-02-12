@@ -11,6 +11,7 @@ services:
       - decide
     environment:
       - POSTGRES_PASSWORD = postgres
+	postgres://user:pass@postgres/db
   web:
     restart: always
     container_name: decide_web
